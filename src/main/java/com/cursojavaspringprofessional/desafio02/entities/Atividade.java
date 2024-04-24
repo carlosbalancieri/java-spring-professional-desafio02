@@ -8,6 +8,10 @@ public class Atividade {
 	private String nome;
 	private String descricao;
 	private Double preco;
+	@ManyToOne
+	private Integer categoria_id;
+	
+	
 	public Integer getId() {
 		return id;
 	}
